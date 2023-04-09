@@ -1,167 +1,283 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GrocerEase</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="/path/to/flickity.css" media="screen">
-<script src="/path/to/flickity.pkgd.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/path/to/flickity.css" media="screen" />
+    <script
+      src="https://kit.fontawesome.com/498f94880d.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/path/to/flickity.pkgd.min.js"></script>
     <script src="index.js" defer></script>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <div class="navbar">
-            <div class="brand"> <a href="#"> Grocer<span>Ease</span></a> </div>
-         
-          <nav class="nav">
-            <ul class="nav-list">
-              <li class="nav-item">
-                <a href="#" class="nav-link hover-underline-animation">Home</a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link  hover-underline-animation">Products</a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link hover-underline-animation">Order</a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link hover-underline-animation">Contact</a>
-              </li>
-            </ul>
-          </nav>
-           <div class="menu-toggle" >
-            <div class="line line-1"></div>
-            <div class="line line-2"></div>
-            <div class="line line-3"></div>
-          </div>
+      <div class="navbar" id="home box">
+        <div class="brand">
+          <a href="#"> Grocer<span>Ease</span></a>
         </div>
-      </header>
 
-    <!-- <div class="navbar">
-        <div class="brand"> <a href="#"> Grocer<span>Ease</span></a> </div>
-        <nav>
-            <ul class="nav-list">
-                <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
-                <li class="nav-item"><a href="#"class="nav-link">Products</a></li>
-                <li class="nav-item"><a href="#"class="nav-link">Order</a></li>
-                <li class="nav-item"><a href="#"class="nav-link">Contact</a></li>
-
-            </ul>
+        <nav class="nav">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="#home"  class="nav-link hover-underline-animation">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#products" onclick="hide()" class="nav-link hover-underline-animation"
+                >Products</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link hover-underline-animation">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a href="#about" class="nav-link hover-underline-animation">About</a>
+            </li>
+          </ul>
         </nav>
-    </div> -->
-    
-      <div class="parent">
-        <div class="child">
-          <div>
-            <img
-              class="left-button car-button"
-              src="Assets/Carousel/right-arrow.png"
-              alt=""
-            />
-          </div>
-          <div>
-            <div class="image">
-              <div class="child-image">
-                <img class="slide-image" src="Assets/Carousel/1.jpg" alt="" />
-                <img class="slide-image" src="Assets/Carousel/2.jpg" alt="" />
-                <img class="slide-image" src="Assets/Carousel/3.jpg" alt="" />
-                <img class="slide-image" src="Assets/Carousel/4.jpg" alt="" />
-                <img class="slide-image" src="Assets/Carousel/5.jpg" alt="" />
-              </div>
+        <div class="menu-toggle">
+          <div class="line line-1"></div>
+          <div class="line line-2"></div>
+          <div class="line line-3"></div>
+        </div>
+      </div>
+    </header>
+
+    <div class="parent" >
+      <div class="child">
+        <div>
+          <img
+            class="left-button car-button"
+            src="Assets/Carousel/right-arrow.png"
+            alt=""
+          />
+        </div>
+        <div>
+          <div class="image">
+            <div class="child-image">
+              <img class="slide-image" src="Assets/Carousel/1.jpg" alt="" />
+              <img class="slide-image" src="Assets/Carousel/2.jpg" alt="" />
+              <img class="slide-image" src="Assets/Carousel/3.jpg" alt="" />
+              <img class="slide-image" src="Assets/Carousel/4.jpg" alt="" />
+              <img class="slide-image" src="Assets/Carousel/5.jpg" alt="" />
+              <img class="slide-image" src="Assets/Carousel/6.jpg" alt="" />
             </div>
           </div>
-          <div>
-            <img
-              class="right-button car-button"
-              src="Assets/Carousel/right-arrow.png"
-              alt=""
-            />
-          </div>
         </div>
-        <div class="bottom-buttons"></div>
+        <div>
+          <img
+            class="right-button car-button"
+            src="Assets/Carousel/right-arrow.png"
+            alt=""
+          />
         </div>
-    
-
-    <section>
-    <h4>Fruits and Vegetables</h4>
-    <div class="products">
+      </div>
+      <div class="bottom-buttons"></div>
+    </div>
+      <div id="products">
+    <section >
+      <h4>Fruits and Vegetables</h4>
+      <div class="products">
         <div class="product product1"></div>
         <div class="product product2"></div>
         <div class="product product3"></div>
         <div class="product product4"></div>
         <div class="product product5"></div>
         <div class="product product6"></div>
-    </div>
+      </div>
     </section>
-    <br>
-<hr>
+    <br />
+    <hr />
     <section>
-        <h4>Your Daily Staples</h4>
-        <div class="products">
-            <div class="product DS1"></div>
-            <div class="product DS2"></div>
-            <div class="product DS3"></div>
-            <div class="product DS4"></div>
-            <div class="product DS5"></div>
-            <div class="product DS6"></div>
-        </div>
-        </section>
+      <h4>Your Daily Staples</h4>
+      <div class="products">
+        <div class="product DS1"></div>
+        <div class="product DS2"></div>
+        <div class="product DS3"></div>
+        <div class="product DS4"></div>
+        <div class="product DS5"></div>
+        <div class="product DS6"></div>
+      </div>
+    </section>
 
-        <br>
-        <hr>
-        <section>
-            <h4>Beverages</h4>
-            <div class="products">
-                <div class="product Bev1"></div>
-                <div class="product Bev2"></div>
-                <div class="product Bev3"></div>
-                <div class="product Bev4"></div>
-                <div class="product Bev5"></div>
-                <div class="product Bev6"></div>
+    <br />
+    <hr />
+    <section>
+      <h4>Beverages</h4>
+      <div class="products">
+        <div class="product Bev1"></div>
+        <div class="product Bev2"></div>
+        <div class="product Bev3"></div>
+        <div class="product Bev4"></div>
+        <div class="product Bev5"></div>
+        <div class="product Bev6"></div>
+      </div>
+    </section>
+    <br />
+    <hr />
+    <section>
+      <h4>Snacks Store</h4>
+      <div class="products">
+        <div class="product Snackproduct Snack1"></div>
+        <div class="product Snackproduct Snack2"></div>
+        <div class="product Snackproduct Snack3"></div>
+        <div class="product Snackproduct Snack4"></div>
+      </div>
+    </section>
+    <br />
+    <hr />
+    <section>
+      <h4>Cleaning & Household</h4>
+      <div class="products">
+        <div class="product Clean1"></div>
+        <div class="product Clean2"></div>
+        <div class="product Clean3"></div>
+        <div class="product Clean4"></div>
+      </div>
+    </section>
+    <br />
+    <hr />
+    <section>
+      <h4>Beauty Products</h4>
+      <div class="products">
+        <div class="product Beauty1"></div>
+        <div class="product Beauty2"></div>
+        <div class="product Beauty3"></div>
+        <div class="product Beauty4"></div>
+        <div class="product Beauty5"></div>
+        <div class="product Beauty6"></div>
+      </div>
+    </section>
+    <br />
+    <hr />
+    <section>
+      <h4>Home Essentials</h4>
+      <div class="products">
+        <div class="product Eseential1"></div>
+        <div class="product Eseential2"></div>
+        <div class="product Eseential3"></div>
+        <div class="product Eseential4"></div>
+        <div class="product Eseential5"></div>
+        <div class="product Eseential6"></div>
+      </div>
+    </section>
+    <br />
+    <br />
+  </div>
+    <hr />
+    <hr />
+    <section class="Brand-store">
+      <h2>Brand Store</h2>
+      <div class="products bsl">
+        <div class="product Brand1"></div>
+        <div class="product Brand2"></div>
+        <div class="product Brand3"></div>
+        <div class="product Brand4"></div>
+        <div class="product Brand5"></div>
+        <div class="product Brand6"></div>
+      </div>
+    </section>
+<div class="contact" id="contact">
+  <div class="background">
+    <div class="container">
+      <div class="screen">
+        <div class="screen-body">
+          <div class="screen-body-item left">
+            <div class="app-title">
+              <span>CONTACT</span>
+              <span>US</span>
             </div>
-            </section>
-            <br>
-            <hr>
-            <section>
-                <h4>Snacks Store</h4>
-                <div class="products">
-                    <div class="product Snackproduct Snack1"></div>
-                    <div class="product Snackproduct Snack2"></div>
-                    <div class="product Snackproduct Snack3"></div>
-                    <div class="product Snackproduct Snack4"></div>
-                    
-                </div>
-                </section>
-                <br>
-                <hr>
-                <section>
-                    <h4>Cleaning & Household</h4>
-                    <div class="products">
-                        <div class="product  Clean1"></div>
-                        <div class="product  Clean2"></div>
-                        <div class="product  Clean3"></div>
-                        <div class="product  Clean4"></div>
-                        
-                    </div>
-                    </section>
-                <br>
-                <br>
-                <hr>
-                <hr>
-                <section class="Brand-store">
-                    <h2>Brand Store</h2>
-                    <div class="products bsl">
-                        <div class="product  Brand1"></div>
-                        <div class="product  Brand2"></div>
-                        <div class="product  Brand3"></div>
-                        <div class="product  Brand4"></div>
-                        <div class="product  Brand5"></div>
-                        <div class="product  Brand6"></div>
-                    </div>
-                    </section>
-        
+            <div class="app-contact">CONTACT INFO : +91 6969696969</div>
+          </div>
+          <div class="screen-body-item">
+            <div class="app-form">
+              <div class="app-form-group">
+                <input class="app-form-control" placeholder="NAME" >
+              </div>
+              <div class="app-form-group">
+                <input class="app-form-control" placeholder="EMAIL">
+              </div>
+              <div class="app-form-group">
+                <input class="app-form-control" placeholder="CONTACT NO">
+              </div>
+              <div class="app-form-group message">
+                <input class="app-form-control" placeholder="MESSAGE">
+              </div>
+              <div class="app-form-group buttons">
+                <button class="app-form-button">CANCEL </button>
+                <button class="app-form-button">SEND</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+<div>
 
-</body>
+<div id="about">
+    <footer class="footer-distributed" >
+      <div class="footer-left">
+        <div class="brand">
+          <a href="#"> Grocer<span>Ease</span></a>
+        </div>
+
+        <p class="footer-links">
+          <a href="#" class="link-1">Home</a>
+
+          <a href="#">Blog</a>
+
+          <a href="#">Pricing</a>
+
+          <a href="#">About</a>
+
+          <a href="#">Faq</a>
+
+          <a href="#">Contact</a>
+        </p>
+
+        <p class="footer-company-name">GrocerEase © 2023</p>
+      </div>
+
+      <div class="footer-center">
+        <div>
+          <i class="fa fa-map-marker"></i>
+          <p><span>505, Patelwadi Vikhroli</span> Mumbai , Maharashtra</p>
+        </div>
+
+        <div>
+          <i class="fa fa-phone"></i>
+          <p>+91 6969696969</p>
+        </div>
+
+        <div>
+          <i class="fa fa-envelope"></i>
+          <p><a href="mailto:support@company.com">support@company.com</a></p>
+        </div>
+      </div>
+
+      <div class="footer-right">
+        <p class="footer-company-about">
+          <span>About the company</span>
+          We try to deliver best quality products of daily needs and home
+          essentials on time.
+        </p>
+
+        <div class="footer-icons">
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+          <a href="#"><i class="fa fa-linkedin"></i></a>
+          <a href="#"><i class="fa fa-github"></i></a>
+        </div>
+      </div>
+    </footer>
+    </div>
+  </body>
 </html>
